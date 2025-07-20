@@ -1,34 +1,52 @@
-body  { font-family:Verdana, Geneva, sans-serif; font-size:10pt; color:#828282; }
-td    { font-family:Verdana, Geneva, sans-serif; font-size:10pt; color:#828282; }
+/* Satoshi's neighbour Dark Theme */
+:root {
+  --color-bg: #181A20;
+  --color-surface: #23242B;
+  --color-primary: #321856;
+  --color-accent: #4DB3A4;
+  --color-success: #81DF84;
+  --color-text: #F3F4F6;
+  --color-text-secondary: #A3A8A7;
+  --color-border: #393B40;
+  --color-error: #E53E3E;
+}
 
-.admin td   { font-family:Verdana, Geneva, sans-serif; font-size:8.5pt; color:#000000; }
-.subtext td { font-family:Verdana, Geneva, sans-serif; font-size:  7pt; color:#828282; }
+body  { font-family:Verdana, Geneva, sans-serif; font-size:10pt; color:var(--color-text); background: var(--color-bg); }
+td    { font-family:Verdana, Geneva, sans-serif; font-size:10pt; color:var(--color-text); background: var(--color-surface); }
 
-input    { font-family:monospace; font-size:10pt; color:#000000; }
-input[type=\"submit\"] { font-family:Verdana, Geneva, sans-serif; }
-textarea { font-family:monospace; font-size:10pt; color:#000000; }
+.admin td   { font-family:Verdana, Geneva, sans-serif; font-size:8.5pt; color:var(--color-text); }
+.subtext td { font-family:Verdana, Geneva, sans-serif; font-size:  7pt; color:var(--color-text-secondary); }
 
-a:link    { color:#000000; text-decoration:none; }
-a:visited { color:#828282; text-decoration:none; }
+input    { font-family:monospace; font-size:10pt; color:var(--color-text); background: var(--color-surface); border: 1px solid var(--color-border); }
+input[type="submit"] { font-family:Verdana, Geneva, sans-serif; background: var(--color-primary); color: var(--color-text); border: 1px solid var(--color-border); }
+textarea { font-family:monospace; font-size:10pt; color:var(--color-text); background: var(--color-surface); border: 1px solid var(--color-border); }
 
-.default { font-family:Verdana, Geneva, sans-serif; font-size: 10pt; color:#828282; }
-.admin   { font-family:Verdana, Geneva, sans-serif; font-size:8.5pt; color:#000000; }
-.title   { font-family:Verdana, Geneva, sans-serif; font-size: 10pt; color:#828282; }
-.subtext { font-family:Verdana, Geneva, sans-serif; font-size:  7pt; color:#828282; }
-.yclinks { font-family:Verdana, Geneva, sans-serif; font-size:  8pt; color:#828282; }
-.pagetop { font-family:Verdana, Geneva, sans-serif; font-size: 10pt; color:#222222; }
-.comhead { font-family:Verdana, Geneva, sans-serif; font-size:  8pt; color:#828282; }
-.comment { font-family:Verdana, Geneva, sans-serif; font-size:  9pt; }
-.hnname  { margin-right: 5px; }
+a:link    { color:var(--color-accent); text-decoration:none; }
+a:visited { color:var(--color-text-secondary); text-decoration:none; }
+a:hover   { color:var(--color-success); }
 
-.comment a:link, .comment a:visited { text-decoration: underline; }
+div, .default, .admin, .title, .subtext, .yclinks, .pagetop, .comhead, .comment {
+  background: var(--color-surface);
+}
+
+.default { font-family:Verdana, Geneva, sans-serif; font-size: 10pt; color:var(--color-text-secondary); }
+.admin   { font-family:Verdana, Geneva, sans-serif; font-size:8.5pt; color:var(--color-text); background: var(--color-surface); }
+.title   { font-family:Verdana, Geneva, sans-serif; font-size: 10pt; color:var(--color-text); background: var(--color-surface); }
+.subtext { font-family:Verdana, Geneva, sans-serif; font-size:  7pt; color:var(--color-text-secondary); background: var(--color-surface); }
+.yclinks { font-family:Verdana, Geneva, sans-serif; font-size:  8pt; color:var(--color-text-secondary); background: var(--color-surface); }
+.pagetop { font-family:Verdana, Geneva, sans-serif; font-size: 10pt; color:var(--color-text); background: var(--color-primary); }
+.comhead { font-family:Verdana, Geneva, sans-serif; font-size:  8pt; color:var(--color-text-secondary); background: var(--color-surface); }
+.comment { font-family:Verdana, Geneva, sans-serif; font-size:  9pt; color:var(--color-text); background: var(--color-surface); }
+.hnname  { margin-right: 5px; color: var(--color-success); }
+
+.comment a:link, .comment a:visited { text-decoration: underline; color: var(--color-accent); }
 .noshow { display: none; }
 .nosee { visibility: hidden; pointer-events: none; cursor: default }
 
-.c00, .c00 a:link { color:#000000; }
+.c00, .c00 a:link { color:var(--color-text); }
 .c5a, .c5a a:link, .c5a a:visited { color:#5a5a5a; }
 .c73, .c73 a:link, .c73 a:visited { color:#737373; }
-.c82, .c82 a:link, .c82 a:visited { color:#828282; }
+.c82, .c82 a:link, .c82 a:visited { color:var(--color-text-secondary); }
 .c88, .c88 a:link, .c88 a:visited { color:#888888; }
 .c9c, .c9c a:link, .c9c a:visited { color:#9c9c9c; }
 .cae, .cae a:link, .cae a:visited { color:#aeaeae; }
@@ -36,21 +54,21 @@ a:visited { color:#828282; text-decoration:none; }
 .cce, .cce a:link, .cce a:visited { color:#cecece; }
 .cdd, .cdd a:link, .cdd a:visited { color:#dddddd; }
 
-.pagetop a:visited { color:#000000;}
-.topsel { color:#ffffff !important; }
-.topsel a:link, .topsel a:visited { color:#ffffff; }
+.pagetop a:visited { color:var(--color-text);}
+.topsel { color:var(--color-success) !important; background: var(--color-accent); }
+.topsel a:link, .topsel a:visited { color:var(--color-success); }
 
-.subtext a:link, .subtext a:visited { color:#828282; }
-.subtext a:hover { text-decoration:underline; }
+.subtext a:link, .subtext a:visited { color:var(--color-text-secondary); }
+.subtext a:hover { text-decoration:underline; color: var(--color-accent); }
 
-.comhead a:link, .subtext a:visited { color:#828282; }
-.comhead a:hover { text-decoration:underline; }
+.comhead a:link, .subtext a:visited { color:var(--color-text-secondary); }
+.comhead a:hover { text-decoration:underline; color: var(--color-accent); }
 
 .default p { margin-top: 8px; margin-bottom: 0px; }
 
 .pagebreak {page-break-before:always}
 
-pre { overflow: auto; padding: 2px; }
+pre { overflow: auto; padding: 2px; background: var(--color-surface); color: var(--color-text); }
 pre:hover { overflow:auto }
 
 .votearrow {
@@ -58,8 +76,7 @@ pre:hover { overflow:auto }
   height:     10px;
   border:     0px;
   margin:     3px 2px 6px;
-  background: url("/static/grayarrow.gif")
-  no-repeat;
+  background: url("/static/grayarrow.gif") no-repeat;
 }
 
 .votelinks.nosee div.votearrow.rotate180 {

@@ -6,7 +6,7 @@ import { NoticeLayout } from '../src/layouts/notice-layout';
 export function NewsGuidelinesPage(): JSX.Element {
   return (
     <NoticeLayout>
-      <b>Hacker News Guidelines</b>
+      <b>Satoshi's neighbour Guidelines</b>
       <br />
       <br />
       <b>What to Submit</b>

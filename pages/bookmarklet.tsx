@@ -13,7 +13,7 @@ export function BookmarkletPage(props): JSX.Element {
         <p id="first">
           Thanks to Phil Kast for writing this bookmarklet for submitting links to{' '}
           <Link href="/">
-            <a>Hacker News</a>
+            <a>Satoshi's neighbour</a>
           </Link>
           . When you click on the bookmarklet, it will submit the page you&#39;re on. To install,
           drag this link to your browser toolbar:
@@ -25,7 +25,7 @@ export function BookmarkletPage(props): JSX.Element {
             style={{ color: '#777', fontSize: '2em' }}
             href="javascript:window.location=%22http://news.ycombinator.com/submitlink?u=%22+encodeURIComponent(document.location)+%22&amp;t=%22+encodeURIComponent(document.title)"
           >
-            post to HN
+            post to SN
           </a>
         </div>
         <br />

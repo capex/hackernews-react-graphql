@@ -6,12 +6,12 @@ import { NoticeLayout } from '../src/layouts/notice-layout';
 export function NewsWelcomePage(): JSX.Element {
   return (
     <NoticeLayout>
-      <b>Welcome to Hacker News</b>
+      <b>Welcome to Satoshi's neighbour</b>
       <br />
       <br />
       <p>
         <Link href="/">
-          <a>Hacker News</a>
+          <a>Satoshi's neighbour</a>
         </Link>{' '}
         is a bit different from other community sites, and we&#39;d appreciate it if you&#39;d take
         a minute to read the following as well as the{' '}
@@ -21,7 +21,7 @@ export function NewsWelcomePage(): JSX.Element {
         .
       </p>
       <p>
-        HN is an experiment. As a rule, a community site that becomes popular will decline in
+        SN is an experiment. As a rule, a community site that becomes popular will decline in
         quality. Our hypothesis is that this is not inevitable—that by making a conscious effort to
         resist decline, we can keep it from happening.
       </p>
@@ -30,7 +30,7 @@ export function NewsWelcomePage(): JSX.Element {
         rude or dumb in comment threads.
       </p>
       <p>
-        A crap link is one that&#39;s only superficially interesting. Stories on HN don&#39;t have
+        A crap link is one that&#39;s only superficially interesting. Stories on SN don&#39;t have
         to be about hacking, because good hackers aren&#39;t only interested in hacking, but they do
         have to be deeply interesting.
       </p>
@@ -49,7 +49,7 @@ export function NewsWelcomePage(): JSX.Element {
         </a>
       </p>
       <p>
-        The most important principle on HN, though, is to make thoughtful comments. Thoughtful in
+        The most important principle on SN, though, is to make thoughtful comments. Thoughtful in
         both senses: civil and substantial.
       </p>
       <p>
@@ -65,7 +65,7 @@ export function NewsWelcomePage(): JSX.Element {
         are empty and negative—comments that are mere name-calling.
       </p>
       <p>
-        Which brings us to the most important principle on HN: civility. Since long before the web,
+        Which brings us to the most important principle on SN: civility. Since long before the web,
         the anonymity of online conversation has lured people into being much ruder than they&#39;d
         be in person. So the principle here is: don&#39;t say anything you wouldn&#39;t say face to
         face. This doesn&#39;t mean you can&#39;t disagree. But disagree without calling names. If

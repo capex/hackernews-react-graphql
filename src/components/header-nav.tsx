@@ -15,7 +15,7 @@ export function HeaderNav(props: IHeaderNavProps): JSX.Element {
     <span className="pagetop">
       <b className="hnname">
         <Link href="/" as="/news">
-          <a>{title}</a>
+          <a>{title || "Satoshi's neighbour"}</a>
         </Link>
       </b>
       &nbsp;
@@ -63,7 +63,7 @@ export function HeaderNav(props: IHeaderNavProps): JSX.Element {
     </span>
   ) : (
     <span className="pagetop">
-      <b>{title}</b>
+      <b>{title || "Satoshi's neighbour"}</b>
     </span>
   );
 }

@@ -23,7 +23,7 @@ module.exports = {
     'plugin:import/typescript'
   ],
   rules: {
-    '@typescript-eslint/interface-name-prefix': ['warn', { prefixWithI: 'always' }],
+    // '@typescript-eslint/interface-name-prefix': ['warn', { prefixWithI: 'always' }],
     'import/prefer-default-export': 'off',
     'import/no-cycle': 'warn',
     'react/prop-types': 'off',
